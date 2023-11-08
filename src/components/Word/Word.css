@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: monospace;
+    align-items: center;
+    justify-content: center;
+}
+
+.word {
+    border-bottom: 0.1em solid white;
+}
