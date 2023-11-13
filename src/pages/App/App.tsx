@@ -96,7 +96,7 @@ function App() {
           <div className="dica">dica: {hint}</div>
           <div className={winner || loser ? 'result show' : 'result'}>
             {loser && 'Você perdeu!'}
-            {winner && 'Parabéns, você ganhou!'}
+            {winner && 'Você ganhou!'}
             <Button
               onButtonClick={refresh}
               text="Tentar novamente" />
