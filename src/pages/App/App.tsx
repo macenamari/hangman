@@ -14,13 +14,11 @@ function App() {
 
   const [hint] = useState(() => {
     const result = category.dica;
-    console.log(result);
     return result;
   });
 
   const [secret] = useState(() => {
-    const result = category.itens[Math.floor(Math.random() * category.itens.length)].toLowerCase()
-    console.log(result);
+    const result = category.itens[Math.floor(Math.random() * category.itens.length)].toLowerCase();
     return result;
   });
 
