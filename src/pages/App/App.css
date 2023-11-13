@@ -1,52 +1,81 @@
 * {
-    color: #fff;
-    margin: 0;
-    background-color: #32006f;;
-    padding: 0;
-    font-family: monospace;
+        color: #fff;
+        margin: 0;
+        background-color: #32006f;;
+        padding: 0;
+        font-family: monospace;
+        padding: 0;
+        margin: 0;
 }
 
 .App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem;
-    gap: 1rem;
-    text-align: center;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem 0rem;
+        gap: 1rem;
+        text-align: center;
+        width: 100vw;
+}  
 
 h1 {
-    font-size: 4rem;
-    text-transform: lowercase;
-}
+        font-size: 4rem;
+        text-transform: lowercase;
+        margin: 0;
+    }
 
 .result {
-    font-size: 2rem;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap:1.5rem;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-}
-
+        font-size: 2rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+    }    
+    
 .show {
-    visibility: visible;
+        visibility: visible;
+    }
+
+    .dica {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+@media (min-width: 700px) { 
+    .App {
+        margin-top: 5rem;
+    } 
+    .dica {
+        font-size: 2rem;
+        padding: 1rem 0rem;
+    }
 }
 
-.row {
-    display: flex;
-    gap: 7rem;
-    margin-top: 1rem;
+@media (min-width: 1024px) {
+
+    .App {
+        margin-top: 2rem;
+    }
+
+ .row {
+        display: flex;
+        gap: 7rem;
+        margin-top: 1rem;
+    }   
+    
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.dica {
-    font-size: 1.5rem;
+@media (min-width: 1280px) {
+    .App {
+        margin-top: 8rem;
+    }
 }

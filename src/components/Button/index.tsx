@@ -2,9 +2,10 @@ import './Button.css';
 
 interface IButton {
     onButtonClick: () => void;
+    text: string
 }
 
-export default function Button({ onButtonClick }: IButton) {
+export default function Button({ onButtonClick, text }: IButton) {
 
     return (
         <button 
@@ -12,7 +13,7 @@ export default function Button({ onButtonClick }: IButton) {
             className="button"
             onClick={onButtonClick}
         >
-            Tentar novamente
+            {text}
         </button>
     )
 }

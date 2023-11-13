@@ -1,99 +1,273 @@
-
 .container {
-    position: relative;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     margin-top: 0.5rem;
-    min-width: 30rem;
+    min-width: 23rem;
 }
 
 .haste-horizontal {
-    height: 10px;
-    width: 150px;
+    height: 5px;
+    width: 100px;
     background-color: #ffffff;
     position: absolute;
     right: 0;
     left: 70px;
-    top: 0px;
+    top: -1px;
 }
 
 .haste-vertical {
-    height: 200px;
-    width: 10px;
+    height: 150px;
+    width: 5px;
     background-color: white;
-    margin-right: 200px;
+    margin-right: 130px;
 }
 
 .base {
-    height: 10px;
-    width: 250px;
+    height: 7px;
+    width: 160px;
     background-color: white;
     margin-bottom: 1rem;
+    margin-top: -1px;
 }
 
 .hang {
-    height: 40px;
-    width: 5px;
-    background-color: #ffffff;
+    height: 30px;
+    width: 3px;
+    background-color: white;
     position: absolute;
-    left: 185px;
+    left: 155px;
     top: 0px;
 }
 
 .head {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     position: absolute;
-    top: 40px;
-    left: 160px;
+    top: 29px;
+    left: 139px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 2px solid white;
 }
 
 .body {
-    height: 60px;
-    width: 3px;
+    height: 40px;
+    width: 2px;
     background-color: #ffffff;
     position: absolute;
-    left: 186px;
-    top: 95px;
+    left: 155px;
+    top: 62px;
 }
 
 .right-arm {
-    height: 3px;
-    width: 30px;
+    height: 2px;
+    width: 20px;
     background-color: #ffffff;
     position: absolute;
-    left:186px;
-    top: 105px;
+    left: 155px;
+    top: 70px;
     rotate: 30deg;
 }
 
 .left-arm {
-    height: 3px;
-    width: 30px;
+    height: 2px;
+    width: 20px;
     background-color: #ffffff;
     position: absolute;
-    left: 160px;
-    top: 105px;
+    left: 137px;
+    top: 70px;
     rotate: -30deg;
 }
+
 .right-leg {
-    height: 3px;
-    width: 30px;
+    height: 2px;
+    width: 20px;
     background-color: #ffffff;
     position: absolute;
-    left: 186px;
-    top: 160px;
+    left: 155px;
+    top: 105px;
     rotate: 30deg;
 }
 .left-leg {
-    height: 3px;
-    width: 30px;
+    height: 2px;
+    width: 20px;
     background-color: #ffffff;
     position: absolute;
-    left: 160px;
-    top: 160px;
+    left: 137px;
+    top: 105px;
     rotate: -30deg;
+}
+
+@media (min-width: 700px) {
+    .container {
+        margin: 1rem 0rem;
+    }
+    .haste-horizontal {
+        height: 10px;
+        width: 150px;
+        position: absolute;
+        right: 0;
+        left: 130px;
+        top: 0px;
+    }
+    
+    .haste-vertical {
+        height: 200px;
+        width: 10px;
+        margin-right: 200px;
+    }
+    
+    .base {
+        height: 10px;
+        width: 250px;
+        margin-bottom: 1rem;
+    }
+    
+    .hang {
+        height: 40px;
+        width: 5px;
+        position: absolute;
+        left: 245px;
+        top: 0px;
+    }
+    
+    .head {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 40px;
+        left: 220px;
+        border: 3px solid white;
+    }
+    
+    .body {
+        height: 60px;
+        width: 3px;
+        position: absolute;
+        left: 246px;
+        top: 95px;
+    }
+    
+    .right-arm {
+        height: 3px;
+        width: 30px;
+        left: 246px;
+        top: 105px;
+        rotate: 30deg;
+    }
+    
+    .left-arm {
+        height: 3px;
+        width: 30px;
+        position: absolute;
+        left: 220px;
+        top: 105px;
+        rotate: -30deg;
+    }
+    .right-leg {
+        height: 3px;
+        width: 30px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 246px;
+        top: 160px;
+        rotate: 30deg;
+    }
+    .left-leg {
+        height: 3px;
+        width: 30px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 220px;
+        top: 160px;
+        rotate: -30deg;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        min-width: 30rem;
+    }
+    
+    .haste-horizontal {
+        height: 10px;
+        width: 150px;
+        position: absolute;
+        right: 0;
+        left: 70px;
+        top: 0px;
+    }
+    
+    .haste-vertical {
+        height: 200px;
+        width: 10px;
+        margin-right: 200px;
+    }
+    
+    .base {
+        height: 10px;
+        width: 250px;
+        margin-bottom: 1rem;
+    }
+    
+    .hang {
+        height: 40px;
+        width: 5px;
+        position: absolute;
+        left: 185px;
+        top: 0px;
+    }
+    
+    .head {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 40px;
+        left: 160px;
+        border: 3px solid white;
+    }
+    
+    .body {
+        height: 60px;
+        width: 3px;
+        position: absolute;
+        left: 186px;
+        top: 95px;
+    }
+    
+    .right-arm {
+        height: 3px;
+        width: 30px;
+        left:186px;
+        top: 105px;
+        rotate: 30deg;
+    }
+    
+    .left-arm {
+        height: 3px;
+        width: 30px;
+        position: absolute;
+        left: 160px;
+        top: 105px;
+        rotate: -30deg;
+    }
+    .right-leg {
+        height: 3px;
+        width: 30px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 186px;
+        top: 160px;
+        rotate: 30deg;
+    }
+    .left-leg {
+        height: 3px;
+        width: 30px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 160px;
+        top: 160px;
+        rotate: -30deg;
+    }
 }
