@@ -1,3 +1,4 @@
+import ReplaceSpecialCharacters from '../../functions/ReplaceSpecialCharacters';
 import './Word.css'
 
 interface IWord {
@@ -12,7 +13,9 @@ function Word({ word, guessed, reveal }: IWord) {
         <div className="wrapper">
             {word.split('').map((letter, index) => (
                 <span key={index} className='word'>
-                    <span style={{visibility: guessed.includes(letter) || reveal ? 'visible' : 'hidden'}}>
+                    <span style={
+                        {visibility: guessed.includes(ReplaceSpecialCharacters(letter))
+                        || reveal ? 'visible' : 'hidden'}}>
                         {letter}
                     </span>
                 </span>

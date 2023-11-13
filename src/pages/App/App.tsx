@@ -7,6 +7,7 @@ import Timer from "../../components/Timer";
 import Keyboard from "../../components/Keyboard";
 import Button from "../../components/Button";
 import data from '../../data/data.json'
+import ReplaceSpecialCharacters from "../../functions/ReplaceSpecialCharacters";
 
 function App() {
   //Define o grupo de palavras
@@ -24,14 +25,15 @@ function App() {
 
   //Letras inseridas
   const [guessed, setGuessed] = useState<string[]>([]);
-  const errors = guessed.filter((letter) => !secret.includes(letter));
+  const errors = guessed.filter((letter) => !ReplaceSpecialCharacters(secret).includes(letter));
 
   //Timer
   const [seconds, setSeconds] = useState(60);
 
   //Condições para vencedor ou ganhador
   const loser = errors.length >= 6 || seconds === 0;
-  const winner = secret.replace(/\s/g, '').split('').every((letter) => guessed.includes(letter));
+  const winner = ReplaceSpecialCharacters(secret).replace(/\s/g, '').split('').every((letter) => guessed.includes(letter));
+
 
   //Impede a inserção se a letra já foi clicada, ou se o jogo tiver terminado
   function addGuessedLetter(letter: string) {
